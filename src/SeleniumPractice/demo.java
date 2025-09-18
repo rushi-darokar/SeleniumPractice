@@ -30,7 +30,9 @@ public class demo {
 		
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,200)");
 		
-		WebElement Gender = driver.findElement(By.xpath("//label[text()='Male']"));
+		
+		WebElement Gender = driver.findElement(By.xpath("//label[@for='gender-radio-1']"));
+//		WebElement Gender = driver.findElement(By.xpath("//label[text()='Male']"));
 		Gender.click();
 		
 		WebElement MobNo = driver.findElement(By.xpath("//input[@id='userNumber']"));
